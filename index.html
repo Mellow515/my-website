@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-<nav style="text-align: right;" style="font-style: italic;">
-<a href="index.html">HOME</a>
-<a href="">ABOUT</a>
-<a href="">BLOG</a>
-</nav>
-
-<title>My Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<link rel="stylesheet" href="style.css"/>
+<title>Registration Form</title>
 </head>
-<body style="color: goldenrod;">
-<h1 style="color:blue;">My Portfolio</h1>
-<h2 style="text-align:center;">Macarius</h2>
-<p style="font-size: 24px;">I am Macarius,a young boy from Nairobi Kenya.I am a computer enthusiast and also an upcooming web designer.I am currently a student at Upperhill school.I aspire to be a worldwide known medical pratictioner.</p>
-<hr>
-<h3 style="font-size:27px;">My Projects</h3>
-<h4 style="font-size:25px">My hobbies</h4>
-<p style="font-size:24px;">I am a cool guy with numerous hobbies.</p>
-<p style="font-size:24px;">Some of my hobbies include:</p>
-<p style="font-size:24px;">Reading novels:I am a big fan of reading novels and I find great pleasure in reading.Reading is also a way of relaxing and also when I read I also get new ideas.As the saying goes 'readers are leaders' and that's why I find great fun in reading.Reading also increases my knowledge and also my skills in certain fields such as my incognitive skills. </p>
-<p style="font-size:24px;">Watching football:I am a big fan of soccer and I am a big fan of the great team ,Manchester United.Soccer is a great sport in the world and I enjoy supporting it.My best player is Marcus Rashford.</p>
-<p style="font-size:24px;">Watching movies:I am a simple guy who enjoys watching thrilling movies.I just enjoy the way movies take us to a whole new world of fantasy.I mostly enjoy watching action movies.It's my dream that one day I would feature as one of the actors in a movie since I'm also a good actor.</p>
+<body>
+<h1>Registration Form</h1>
+<p>Please fill in this form as required</p>
+<form method="post" action=""></form>
+<fieldset>
+<label for="first name">Enter First Name: <input id="first name" type="text" required /></label>
+<label for="last name">Enter Last Name: <input id="last name" type="text" required/></label>
+<label for="email">Enter Email Address: <input id="email" type="email" required /></label>
+<label for="new-password">Create a new password: <input id="new-password" type="password" required minlength="8" /></label>
+</fieldset>
+<fieldset>
+<legend>Account type (required)</legend>
+<label for="personal-account"><input type="radio" name="account-type" id="personal-account" checked class="inline"/> Personal</label>
+<label for="business-account"><input type="radio" name="account-type" id="business-account" checked class="inline"/> Business</label>
+</fieldset>
+<fieldset>
+<label for="profile-picture">Upload a profile picture<input type="file" id="profile-picture"></label>
 
 
+</fieldset>
+<label for="terms-and-conditions">
+<label for="age">Input your age (years) <input type="number" min="13" max="120" id="age"/></label>
+<label for="referrer">How did you hear about us?
+<select id="referrer">
+<option>(select one):</option>
+<option></option>
+<option></option>
+</select>
+</label>
+<label for="bio">Provide a bio:
+<textarea id="bio" rows="3" cols="30" placeholder="I like coding because..."></textarea>
+</label>
+<input id="terms-and-conditions" type="checkbox" required class="inline"/>I accept the terms and conditions
+</label>
+<input value="Submit" type="submit"
 </body>
+
+
+
+
+
+
+
+
+
+
 </html>
